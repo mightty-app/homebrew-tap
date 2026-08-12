@@ -1,2 +1,5 @@
-# homebrew-tap
-Homebrew tap for Mightty
+# Mightty Homebrew Tap
+
+```sh
+brew install mightty-app/tap/mightty
+```
