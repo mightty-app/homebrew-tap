@@ -1,23 +1,23 @@
 class Mightty < Formula
   desc "MighTTY host-side CLI and agent-event daemon"
   homepage "https://mightty.app"
-  version "1.1.0"
+  version "1.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://dl.mightty.app/mightty/v#{version}/mightty-darwin-amd64.tar.gz"
-      sha256 "51e78e84d31705fa0d82acf7ffb3390facffc11a034105417032e265f1163cdb"
+      sha256 "fdbf733634b0d8be7b34fafd18fedad40d6e86a9462018fb43a0734db0b6a51b"
     end
     if Hardware::CPU.arm?
       url "https://dl.mightty.app/mightty/v#{version}/mightty-darwin-arm64.tar.gz"
-      sha256 "182fc9132090748ec162fda6be98ddb1d22f28091fdf49e8e2931e526d0cb3c0"
+      sha256 "a651c8d317a98045b7222fb6e9f7eb509ce6844a7072d6574e114d766fda9e44"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://dl.mightty.app/mightty/v#{version}/mightty-linux-amd64.tar.gz"
-      sha256 "5264eb802e40f528c62c11a3c397e79c11074a1fdc582aa236c70a862e33cb7a"
+      sha256 "07f06818822ae820791503887cf005888a6766cdd501b0dd3f21de889f531b1b"
     end
   end
 
